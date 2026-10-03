@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcm-dptir"
+version = "0.1.0"
+description = "GCADTI-based compound-target prioritization code for TCM-DPTIR"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "torch",
+  "dgl",
+  "dgllife",
+  "rdkit",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
